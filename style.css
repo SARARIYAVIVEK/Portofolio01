@@ -215,6 +215,27 @@ main{
     margin-left:30px;
 }
 
+/* Mobile View */
+@media only screen and(max-width:670px){
+    #home{
+        padding:30px;
+    }
+    #home .home-row h1{
+        font-size:35px;
+        letter-spacing:0;
+        line-height:50px;
+    }
+      #home .home-row h1 br{
+          display:none;
+      }
+    #home .home-row p{
+        color:whitesmoke;
+        font-size:20px;
+        font-weight:400;
+    }
+}
+    
+
 /*                                             ABOUT SECTION  START                                                   */
 #about{
     padding:70px,30px;
@@ -296,6 +317,53 @@ main{
     font-size: 15px;
 }
 
+/* Mobile View */
+@media only screen and (max-width:830px){
+    #about{
+        padding:50px 10px;
+    }
+    #about .divider ~ p{
+        font-size:14px;
+        letter-spacing:0px;
+        text-align:justify;
+    }
+    #about .about-col{
+        flex-direction:column;
+    }
+    #about .about-col .img-col img{
+        width:50%;
+    }
+    #about .about-col .info-col h2{
+        font-weight:600;
+        font-size:25px;
+        letter-spacing:0px;
+    }
+    #about .about-col .info-col p{
+        font-size:14px;
+        letter-spacing:0px;
+    }
+    #about .about-col .info-col .icon-list-col{
+        flex-direction:column;
+        gap:0;
+    }
+     #about .about-col .info-col .icon-list-col .icon-list ul li {
+         margin:10px 0;
+     }
+    #about .about-col .info-col .icon-list-col .icon-list ul li strong{
+    font-weight:500;
+    margin-right: 15px;
+    }
+    #about .about-col .info-col .icon-list-col .icon-list ul li span{
+    font-weight: 400;
+    font-size: 13px;
+    }
+}
+@media only screen and (max-width:400px){
+       #about .about-col .img-col img{
+        width:90%;
+    } 
+}
+    
 /*                                             ABOUT SECTION  END                                                     */
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
@@ -328,6 +396,30 @@ gap: 10px;
     color: var(--textColor);
     font-weight: 500;
     font-size: 16px;
+}
+
+/* Mobile View */
+@media only screen and (max-width:700px){
+#fact{
+    padding:40px 15px;
+}
+    #fact .fact-row{
+grid-template-columns: repeat(2,1fr);
+grid-gap:10px;
+    }    
+}
+@media only screen and (max-width:370px){
+#fact .fact-row .fact-box i{
+    font-size: 30px;
+}
+    #fact .fact-row .fact-box strong{
+    font-size: 20px;
+    font-weight:600;
+}
+ #fact .fact-row .fact-box p{
+    font-weight: 400;
+    font-size: 14px;
+  }       
 }
 
 /*====== Facts Section end        ======*/
@@ -369,7 +461,18 @@ gap: 10px;
     border-radius: 20px;
 }
 
-/*                     Skill Section start                      */
+@media only screen and (max-width:450px){
+#skill{
+    padding:50px 15px;
+}
+    #skill .skill-row{
+     grid-template-columns: repeat(1,1fr);
+    grid-gap:10px;   
+   }
+}
+    
+
+/*                     Skill Section End                      */
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
